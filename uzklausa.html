@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uzklausos forma</title>
+  </head>
+  <header>
+    <img
+      src="https://boltonpulmonaryfibrosis.org/wp-content/uploads/2018/02/summer-palm-beach-holiday.jpg"
+      alt="summer holiday"
+      width="100%"
+    />
+
+    <h1>Lekiauk su vejeliu</h1>
+
+    <nav>
+      <a href="index.html"
+        ><img
+          src="https://img.freepik.com/premium-vector/summer-holiday-vector-logo-illustration-water-ocean-waves-with-sun-palm-tree-beach-emblem_279597-76.jpg?w=2000"
+          alt="summer-beach"
+          width="50px"
+          height="50px"
+      /></a>
+      <a href="Login.html">prisijungimo forma</a>
+      <a href="#">Uzklausos forma</a>
+      <a href="blog.html">Blog'as</a>
+    </nav>
+
+    <!-- <nav>
+      <a href="#">Kelioniu pasiulymai</a>
+      <a href="#autonuoma">Autonuoma</a>
+      <a href="#">Patarimai keliaujantiems</a>
+      <a href="#zurnalas">Kelioniu zurnalas</a>
+    </nav> -->
+  </header>
+  <body>
+    <form class="table">
+      <div>Uzpildykite uzklausa</div>
+      <div>
+        <label for="name"><strong>Vardas:</strong></label>
+        <input type="text" id="name" pattern="[A-Za-z]*" required />
+      </div>
+
+      <div>
+        <label for="email"
+          ><strong>El.Pastas</strong>
+          <input type="email" name="email" id="email" required />
+        </label>
+      </div>
+
+      <div>
+        <label for="phone-number"
+          ><strong>Telefonas</strong>
+          <input
+            type="tel"
+            name="tel"
+            id="email"
+            placeholder="pvz. +37066666666"
+            required
+          />
+        </label>
+      </div>
+
+      <div>
+        <label for="kryptis"><strong>Kryptis:</strong></label>
+        <select name="kryptis" id="kryptis">
+          <option value="" disabled>--Pasirinkti sali--</option>
+          <option value="europa" disabled>Europa</option>
+          <option value="azija">Azija</option>
+          <option value="afrika" disabled>Afrika</option>
+          <option value="amerika" disabled>P. ir S.Amerika</option>
+        </select>
+      </div>
+      <div>
+        <label for="salis"><strong>Salis:</strong></label>
+        <select name="salis" id="salis">
+          <option value="" disabled>--Pasirinkti sali--</option>
+          <option value="kanada">Kanada</option>
+          <option value="jav">JAV</option>
+          <option value="peru">Peru</option>
+          <option value="cile">Cile</option>
+          <option value="kuba">Kuba</option>
+          <option value="honduras">Honduras</option>
+          <option value="kolumbija">Kolumbija</option>
+          <option value="argentina">Argentina</option>
+          <option value="brazilija">Brazilija</option>
+          <option value="el-slvador">El Salvadoras</option>
+        </select>
+      </div>
+      <div>
+        <label for="sezonas"><strong>Sezonas:</strong></label>
+        <select name="sezonas" id="sezonas">
+          <option value="#" disabled>--Pasirinkti sezona--</option>
+          <option value="kanada">Vasara</option>
+          <option value="jav">Pavasaris</option>
+          <option value="peru">Ziema</option>
+          <option value="cile">Ruduo</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="travel-date"><strong>Keliones data:</strong></label>
+        <input type="date" name="travel-date" id="travel-date" />
+      </div>
+
+      <div>
+        <strong>Keliese keliausite:</strong>
+        <input type="radio" name="how-many" id="1adult" value="1adult" />
+        <label for="1adult">1 suauges</label>
+        <input type="radio" name="how-many" id="2adults" value="2adults" />
+        <label for="2adults">2 suauge</label>
+        <input
+          type="radio"
+          name="how-many"
+          id="1adult1kid"
+          value="1adult1kid"
+        />
+        <label for="1adult1kid">1 suauge ir 1 vaikas</label>
+        <input
+          type="radio"
+          name="how-many"
+          id="1adults2kids"
+          value="1adults2kids"
+        />
+        <label for="1adults2kids">1 suauges ir 2+ vaiku</label>
+        <input
+          type="radio"
+          name="how-many"
+          id="2adults1kid"
+          value="2adults1kid"
+        />
+        <label for="2adults1kid">2 suauge ir 1 vaikas</label>
+        <input
+          type="radio"
+          name="how-many"
+          id="2adults2kids"
+          value="2adults2kids"
+        />
+        <label for="2adults2kids">2 suauge ir 2+ vaiku</label>
+        <input
+          type="radio"
+          name="how-many"
+          id="2adults2kids-more"
+          value="2adults2kids-more"
+        />
+        <label for="2adults2kids-more">2+ suauge ir 2+ vaiku</label>
+      </div>
+
+      <div>
+        <strong>Zvaigzduciu viesbutis:</strong>
+        <label for="2star">2 zvaigzduciu</label>
+        <input type="checkbox" id="2star" name="2star" />
+
+        <label for="3star">3 zvaigzduciu</label>
+        <input type="checkbox" id="3star" name="3star" />
+
+        <label for="4star">4 zvaigzduciu</label>
+        <input type="checkbox" id="4star" name="4star" />
+
+        <label for="5star">5 zvaigzduciu</label>
+        <input type="checkbox" id="5star" name="5star" />
+      </div>
+
+      <div>
+        <strong>Maitinimas:</strong>
+        <label for="breakfast">Pusryciai</label>
+        <input type="checkbox" id="breakfast" name="breakfast" />
+
+        <label for="lunch">Pietus</label>
+        <input type="checkbox" id="lunch" name="lunch" />
+
+        <label for="dinner">Vakariene</label>
+        <input type="checkbox" id="dinner" name="dinner" />
+
+        <label for="breakfast-dinner">Pusryciai ir vakariene</label>
+        <input type="checkbox" id="breakfast-dinner" name="breakfast-dinner" />
+
+        <label for="all-inclusive">Viskas iskaiciuota</label>
+        <input type="checkbox" id="all-inclusive" name="all-inclusive" />
+      </div>
+
+      <div>
+        Svarbi info:
+        <textarea id="info" name="info" rows="10" cols="50"></textarea>
+      </div>
+
+      <form method="post" action="index.html">
+        <button type="submit" formaction="/index.html">Siusti uzklausa</button>
+      </form>
+    </form>
+  </body>
+
+  <footer>
+    <h3>Musu partneriai</h3>
+    <section>
+      <div class="partneriai">
+        <img
+          src="https://www.makalius.lt/wp-content/themes/makaliusblue/img/default-img.png"
+          alt="makalius-logo"
+          width="5%"
+        />
+      </div>
+      <div class="partneriai">
+        <img
+          src="https://global-uploads.webflow.com/62b0e6308cc691625470b227/62dec0259f18b71442a15966_Apple-Logo.png"
+          alt="apple-logo"
+          width="5%"
+        />
+      </div>
+      <div class="partneriai">
+        <img
+          src="https://cdn.laisvalaikiodovanos.lt/storage/photos/products/002537/72310.jpg?w=1451&h=1024&fit=crop"
+          alt="aic-logo"
+          width="5%"
+        />
+      </div>
+      <div class="partneriai">
+        <img
+          src="https://yt3.googleusercontent.com/ytc/AOPolaQqc4wC1KVQdyPPlYuiHs0KL8oRGnTjmf-zahAScw=s900-c-k-c0x00ffffff-no-rj"
+          alt="kelioniu-akademija"
+          width="5%"
+        />
+      </div>
+      <div class="partneriai">
+        <img
+          src="https://www.teztour.lt/static/photos/pages/orig/39/3996/200894754260feb5855fe17.jpg"
+          alt="tez-tour"
+          width="5%"
+        />
+      </div>
+    </section>
+
+    <div class="adresas">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62023.09857936229!2d-89.256451357384!3d13.691558187054099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63302ff889c5c5%3A0xcf157d983b46f169!2sBarcel%C3%B3%20San%20Salvador!5e0!3m2!1sen!2slt!4v1695379695567!5m2!1sen!2slt"
+        width="400"
+        height="250"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <address>
+        Aplankykite mus: <br />
+        Finca La Pena, San Salvador<br />
+        +4654984320<br />
+        El Salvador<br />
+      </address>
+    </div>
+    <p>Auotrines teises apsaugotos &copy; 2023</p>
+  </footer>
+</html>
